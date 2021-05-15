@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tag start-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="edustar">
+    <meta name="author" content="khanalprem">
+    <meta name="copyright" content="khanalprem">
+
+    <!--title-->
+    <title>东莞理工学院学生社团社区 | 社团会员报名</title>
+
+    <!-- faveicon start   -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- stylesheet start -->
+    <link href="css/layui.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="sweet-alert.css" type="text/css" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 col-xs-5">
+                        <ul class="tophead-link">
+                            <li><a href="index.html"><i > 欢迎来到学生社团社区 !</i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-7 col-sm-7 col-xs-7 tophead-right">
+                        <ul class="tophead-link">
+                            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Student community of DGUT</a>
+                            </li>
+                            <li><a href="contact.html"><i class="fa fa-credit-card" aria-hidden="true"></i> 个人账户</a>
+                            </li>
+                            <!-- <li><a href class="logouttest"><i class="fa fa-key" aria-hidden="true"></i> 注销登录</a>
+                            </li> -->
+                            <li><button class="logouttest"><i class="fa fa-key" aria-hidden="true"></i> 注销登录</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Navigation -->
+        <div id="masthead" class="site-header menu">
+            <div class="container">
+                <div class="site-branding">
+                    <div id="site-identity">
+                        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                    <!-- #site-identity -->
+                </div>
+                <!-- .site-branding -->
+                <div class="header-nav-search">
+                    <div class="header-search">
+                        <i class="fa fa-search top-search"></i>
+                        <div class="search-popup">
+                            <form class="search-wrapper" onsubmit="return false">
+                                <div>
+                                    <input type="text" autocomplete="off" placeholder="请输入社团名称" class="associationsearch">
+                                    <input type="submit" class="pop-search">
+                                </div>
+                            </form>
+                            <div class="search-overlay"></div>
+                        </div>
+                    </div>
+                    <div id="main-navigation">
+                        <nav class="main-navigation">
+                            <div class="close-icon">
+                                <i class="fa fa-close"></i>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">首页</a></li>
+                                <li><a href="activitystusignup.html">社团活动报名</a> </li>
+                                <li><a href="associationnormalsignup.html">社团会员报名</a> </li>
+                                <li><a href="associationstaffsignup.html">社团干事报名</a> </li>
+                                <li><a href="associationregister.html">社团申请</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation -->
+    </header>
+    <section class="breadcrumb" style="background-image: url(images/background/breadcrumb.jpg);">
+        <div class="breadcrumb-overlay"></div>
+        <div class="container">
+            <h1><a href="#">社团报名</a></h1>
+            <span><a href="index.html">社区</a></span><span><i class="fa fa-angle-right"></i>社团列表</span>
+        </div>
+    </section>
+    <section class="welcome section pdb0 clear">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="title">
+                        <h2>67个社团任君选择</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="memberdiv">
+        <input type="text" placeholder="请输入社团名称" id="memberinput">
+        <button><i class="fa fa-search"></i></button>
+    </div>
+    <div style="width: 80%;padding-top: 10px;margin: -10px auto;">
+        <!-- <blockquote class="layui-elem-quote">#基于强大的layui 框架,通过扩展nicePage.js实现JSON数据格式的自动表格分页和跳转功能,配置简单,上手速度快，兼容IE5+。</blockquote> -->
+        <!--以下为两个必须div元素-->
+        <div id="table"></div>
+        <div id="pageBar"></div>
+    </div>
+
+    <!-- Stat Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="footer-widget">
+                        <h2>开发者</h2>
+                        <div class="widget-content">
+                            <div class="text">东莞理工学院学生社团社区仍在试用当中，若有疑问请使用邮箱联系，谢谢！</div>
+                            <address>
+                                <p><i class="fa fa-map-marker"></i> GuangDong, Dongguan</p>
+                                <p><i class="fas fa-user-tie"></i> Satoshi-Yuen</p>
+                                <p><i class="fa fa-envelope"></i> 3308606392@qq.com</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="footer-widget links-widget">
+                        <h2>校园网站</h2>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-sm-12">
+                                <ul>
+                                    <li><i class="fa fa-university"></i><a href="https://www.dgut.edu.cn/">东莞理工学院官网</a></li>
+                                    <li><i class="fa fa-book"></i><a href="http://jwc.dgut.edu.cn/">东莞理工学院教务处</a></li>
+                                    <li><i class="fa fa-building"></i><a href="http://ehall.dgut.edu.cn/">网上办事大厅</a></li>
+                                    <li><i class="fas fa-file-signature"></i><a href="http://e.dgut.edu.cn/">东莞理工学院校务服务平台</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-sm-12">
+                                <ul>
+                                    <li><i class="fa fa-graduation-cap"></i><a href="http://job.dgut.edu.cn/">东莞理工学院就业信息网</a></li>
+                                    <li><i class="fa fa-envelope"></i><a href="http://stu.dgut.edu.cn/">学工系统</a></li>
+                                    <li><i class="fas fa-swatchbook"></i><a href="http://www.lib.dgut.edu.cn/">图书馆</a></li>
+                                    <li><i class="fas fa-swatchbook"></i><a href="http://dgut.co.cnki.net/">毕业设计(论文)管理系统</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-widget subscribe-widget">
+                        <h2>Newsletter</h2>
+                        <div class="widget-content">
+                            <div class="text">Lorem ipsum dolor sit amet, adipiscing </div>
+                            <div class="newsletter-form">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" name="email" value="" placeholder="Email Address..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary button">suscribe now<span class="btn-shape"></span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer Bottom-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="text text-left">Copyright &copy; 2021.东莞理工学院 All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scroll top -->
+    <a class="scroll-top fa fa-angle-up" href="javascript:void(0)"></a>
+    <!-- srolltop end -->
+
+    <script src=js/jquery-3.2.1.min.js></script>
+    <script src="js/layer/layer.js"></script>
+    <script src=js/bootstrap.min.js></script>
+    <script src=js/jquery.mixitup.min.js></script>
+    <script src=js/jquery.fancybox.min.js></script>
+    <script src=js/jquery.counterup.min.js></script>
+    <script src=js/waypoints.min.js></script>
+    <script src=js/jquery.magnific-popup.min.js></script>
+    <script src=js/owl.carousel.min.js></script>
+    <script src=js/script.js></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/layui.js"></script>
+    <script type="text/javascript" src="js/nicePage.js"></script>
+    <script type="text/javascript" src="associationmembersignuppage.js"></script>
+    <script type="text/javascript" src="js/signupassociationbtnaction.js"></script>
+    <script type="text/javascript" src="sweet-alert.min.js"></script>
+    <script src="Logout.js"></script>
+    <script src="js/searchmess.js"></script>
+    <script src="js/searchcommmes.js"></script>
+</body>
+
+</html>

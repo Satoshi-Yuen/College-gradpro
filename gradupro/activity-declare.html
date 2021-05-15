@@ -1,0 +1,664 @@
+<!doctype html>
+<html class="fixed" lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title></title>
+		<link rel="Shortcut Icon" href="assets/images/favicon.ico">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="pageskill.css">
+		<link rel="stylesheet" href="example.css">
+		<link rel="stylesheet" href="sweet-alert.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+		<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+		<link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-timepicker/css/bootstrap-timepicker.css" />
+		<link rel="stylesheet" href="assets/vendor/dropzone/css/basic.css" />
+		<link rel="stylesheet" href="assets/vendor/dropzone/css/dropzone.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+		
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>
+
+		
+	</head>
+	<body>
+		
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="#" class="logo">
+						<img src="assets/images/logo.png" height="50" alt="Porto Admin" />
+					</a>
+					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+			
+					<form action="pages-search-results.html" class="search nav-form">
+						<div class="input-group input-search">
+							<input type="text" class="form-control" name="q" id="q" autocomplete="off" placeholder="学校门户跳转">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+			
+					<span class="separator"></span>
+			
+					<ul class="notifications">
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-tasks"></i>
+								<span class="badge">3</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu large">
+								<div class="notification-title">
+									<span class="pull-right label label-default">3</span>
+									Tasks
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<p class="clearfix mb-xs">
+												<span class="message pull-left">Generating Sales Report</span>
+												<span class="message pull-right text-dark">60%</span>
+											</p>
+											<div class="progress progress-xs light">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+											</div>
+										</li>
+			
+										<li>
+											<p class="clearfix mb-xs">
+												<span class="message pull-left">Importing Contacts</span>
+												<span class="message pull-right text-dark">98%</span>
+											</p>
+											<div class="progress progress-xs light">
+												<div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+											</div>
+										</li>
+			
+										<li>
+											<p class="clearfix mb-xs">
+												<span class="message pull-left">Uploading something big</span>
+												<span class="message pull-right text-dark">33%</span>
+											</p>
+											<div class="progress progress-xs light mb-xs">
+												<div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-envelope"></i>
+								<span class="badge">4</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="pull-right label label-default">230</span>
+									Messages
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Doe Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Doe</span>
+												<span class="message">Lorem ipsum dolor sit.</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Junior</span>
+												<span class="message truncate">Truncated message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet lacinia orci. Proin vestibulum eget risus non luctus. Nunc cursus lacinia lacinia. Nulla molestie malesuada est ac tincidunt. Quisque eget convallis diam, nec venenatis risus. Vestibulum blandit faucibus est et malesuada. Sed interdum cursus dui nec venenatis. Pellentesque non nisi lobortis, rutrum eros ut, convallis nisi. Sed tellus turpis, dignissim sit amet tristique quis, pretium id est. Sed aliquam diam diam, sit amet faucibus tellus ultricies eu. Aliquam lacinia nibh a metus bibendum, eu commodo eros commodo. Sed commodo molestie elit, a molestie lacus porttitor id. Donec facilisis varius sapien, ac fringilla velit porttitor et. Nam tincidunt gravida dui, sed pharetra odio pharetra nec. Duis consectetur venenatis pharetra. Vestibulum egestas nisi quis elementum elementum.</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joe Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joe Junior</span>
+												<span class="message">Lorem ipsum dolor sit.</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Junior</span>
+												<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet lacinia orci. Proin vestibulum eget risus non luctus. Nunc cursus lacinia lacinia. Nulla molestie malesuada est ac tincidunt. Quisque eget convallis diam.</span>
+											</a>
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<span class="badge">3</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="pull-right label label-default">3</span>
+									Alerts
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-thumbs-down bg-danger"></i>
+												</div>
+												<span class="title">Server is Down!</span>
+												<span class="message">Just now</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-lock bg-warning"></i>
+												</div>
+												<span class="title">User Locked</span>
+												<span class="message">15 minutes ago</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-signal bg-success"></i>
+												</div>
+												<span class="title">Connection Restaured</span>
+												<span class="message">10/10/2014</span>
+											</a>
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+			
+					<span class="separator"></span>
+			
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name"></span>
+								<span class="role">administrator</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> 我的信息</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> 锁定账号</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href class="logouttest"><i class="fa fa-power-off"></i> 注销登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+					<div class="sidebar-header">
+						<div class="sidebar-title">
+							学生社团管理系统
+						</div>
+						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+						</div>
+					</div>
+				
+					<div class="nano">
+						<div class="nano-content">
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-main">
+									<li>
+										<a href="index.html">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>首页</span>
+										</a>
+									</li>
+									<li class="nav-parent" id="shetuan">
+										<a>
+											<i class="fa fa-copy" aria-hidden="true"></i>
+											<span>社团信息</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="IntroductionofAssociation.html">&#8195;●&#8195;社团概述</a>
+											</li>
+											<li>
+												<a href="files-download.html">&#8195;●&#8195;文件下载</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent nav-expanded nav-active" id="huodong">
+										<a>
+											<i class="fa fa-tasks" aria-hidden="true"></i>
+											<span>活动管理</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="activity-declare.html">&#8195;●&#8195;活动申报</a>
+											</li>
+                                            <li>
+												<a href="activity-release.html">&#8195;●&#8195;活动发布</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent" id="baoming">
+										<a>
+											<i class="fa fa-list-alt" aria-hidden="true"></i>
+											<span>报名管理</span>
+										</a>
+										<ul class="nav nav-children">
+                                            <li>
+												<a href="community-signup.html">&#8195;●&#8195;社团报名</a>
+											</li>
+                                            <li>
+												<a href="activity-signup.html">&#8195;●&#8195;活动报名</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent" id="huiyuan">
+										<a>
+											<i class="fa fa-table" aria-hidden="true"></i>
+											<span>会员管理</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="members-mana.html">&#8195;●&#8195;普通会员</a>
+											</li>
+											<li>
+												<a href="staffs-mana.html">&#8195;●&#8195;社团骨干</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</aside>
+				<!-- end: sidebar -->
+
+				<section role="main" class="content-body">
+					<header class="page-header">
+						<h2>活动申报</h2>
+					
+						<div class="right-wrapper pull-right">
+							<ol class="breadcrumbs">
+								<li>
+									<a href="index.html">
+										<i class="fa fa-home"></i>
+									</a>
+								</li>
+								<li><span>首页</span></li>
+							</ol>
+					
+							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
+						</div>
+					</header>
+
+					<!-- start: page -->
+						<section class="panel">
+							<header class="panel-heading">
+								<div class="panel-actions">
+									<a href="#" class="fa fa-caret-down"></a>
+								</div>
+						
+								<h2 class="panel-title">活动审批总表</h2>
+							</header>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="mb-md">
+											<button id="addToTable" class="btn btn-primary">活动申报 <i class="fa fa-plus"></i></button>
+										</div>
+									</div>
+								</div>
+
+
+								<table class="content">
+									<thead>
+										<tr>
+											<th>序号</th>
+											<th>活动名</th>
+											<th>活动日期</th>
+											<th>活动时间</th>
+											<th>活动地点</th>
+											<th>申报文件</th>
+											<th>审批状态</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>
+								<div class="page" id="page-4"></div>
+							</div>
+						</section>
+
+						<section class="panel" id="acdeclareadd">
+							<header class="panel-heading">
+								<div class="panel-actions">
+									<a href="#" class="fa fa-caret-down"></a>
+								</div>
+				
+								<h2 class="panel-title">活动申报信息填写</h2>
+							</header>
+							<div class="panel-body">
+								<form action="" class="form-horizontal form-bordered" onsubmit="return false" id="activitydeclaresubmit" method="" enctype="multipart/form-data">
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputReadOnly">申请的社团</label>
+										<div class="col-md-6">
+											<input type="text" id="declareassocition" class="form-control" readonly="readonly" name="association">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">活动名</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="declareactivityname" name="activityname">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">活动日期</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="fa fa-calendar"></i>
+												</span>
+												<input type="text" autocomplete="off" data-plugin-datepicker class="form-control" id="declareactivitydate" name="activitydate">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">活动时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="fa fa-clock-o"></i>
+												</span>
+												<input type="text" autocomplete="off" data-plugin-timepicker class="form-control" data-plugin-options='{ "showMeridian": false }' id="declareactivitystarttime" name="activitystarttime">
+												<span class="input-group-addon">to</span>
+												<input type="text" autocomplete="off" data-plugin-timepicker class="form-control" data-plugin-options='{ "showMeridian": false }' id="declareactivityendtime" name="activityendtime">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">活动地点</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="declareactivityplace" name="activityplace">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="textareaDefault">活动简介</label>
+										<div class="col-md-6">
+											<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="200" id="declareactivitytext" name="declarecontent"></textarea>
+											<p>
+												<code>200字以内</code>
+											</p>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">文件上传</label>
+										<div class="col-md-6">
+											<div class="fileupload fileupload-new" data-provides="fileupload">
+												<div class="input-append">
+													<div class="uneditable-input" id="declareactivityfile" name="declarefile">
+														<i class="fa fa-file fileupload-exists"></i>
+														<span class="fileupload-preview" id="submitfile"></span>
+													</div>
+													<span class="btn btn-default btn-file">
+														<span class="fileupload-exists">变更</span>
+														<span class="fileupload-new">选择文件</span>
+														<input type="file" id="declareuploadfile"/>
+													</span>
+													<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">移除</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="declarefile" id="declaresubmitfilename">
+									<div class="form-group">
+										<button class="btn btn-primary btn-submit" id="declaresubmit" type="submit">提交 </button>
+										<button type="reset" class="btn btn-default btn-default-last">重置</button>
+									</div>
+								</form>
+							</div>
+						</section>
+
+						<section class="panel" id="acdeclareedit">
+							<header class="panel-heading">
+								<div class="panel-actions">
+									<a href="#" class="fa fa-caret-down"></a>
+								</div>
+				
+								<h2 class="panel-title">活动申报信息修改</h2>
+							</header>
+							<div class="panel-body">
+								<form class="form-horizontal form-bordered" onsubmit="return false" method="get" id="declaresditdata">
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputReadOnly">申请的社团</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" id="editdeclareassociation" class="form-control" readonly="readonly" name="association">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">活动名</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="editactivityname" name="activityname">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">活动日期</label>
+										<div class="col-md-6"> 
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="fa fa-calendar"></i>
+												</span>
+												<input type="text" autocomplete="off" data-plugin-datepicker class="form-control" id="editactivitydate" name="activitydate">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">活动时间</label>
+										<div class="col-md-6">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="fa fa-clock-o"></i>
+												</span>
+												<input type="text" autocomplete="off" data-plugin-timepicker class="form-control" data-plugin-options='{ "showMeridian": false }' name="activitystarttime" id="editstarttime">
+												<span class="input-group-addon">to</span>
+												<input type="text" autocomplete="off" data-plugin-timepicker class="form-control" data-plugin-options='{ "showMeridian": false }' name="activityendtime" id="editendtime">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">活动地点</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="editactivityplace" name="activityplace">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">文件上传</label>
+										<div class="col-md-6">
+											<div class="fileupload fileupload-new" data-provides="fileupload">
+												<div class="input-append">
+													<div class="uneditable-input">
+														<i class="fa fa-file fileupload-exists"></i>
+														<span class="fileupload-preview" id="editfilename"></span>
+													</div>
+													<span class="btn btn-default btn-file">
+														<span class="fileupload-exists">变更</span>
+														<span class="fileupload-new">选择文件</span>
+														<input type="file" name="uploadfile"/>
+													</span>
+													<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">移除</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="id" id="declareid">
+									<input type="hidden" name="declarefile" id="declarefilename">
+									<div class="form-group">
+										<button class="btn btn-primary btn-submit" id="declaresdit">修改 </button>
+										<button id="reset" class="btn btn-default btn-default-last">重置</button>
+									</div>
+								</form>
+							</div>
+						</section>
+					<!-- end: page -->
+				</section>
+			</div>
+
+			<aside id="sidebar-right" class="sidebar-right">
+				<div class="nano">
+					<div class="nano-content">
+						<a href="#" class="mobile-close visible-xs">
+							Collapse <i class="fa fa-chevron-right"></i>
+						</a>
+			
+						<div class="sidebar-right-wrapper">
+			
+							<div class="sidebar-widget widget-calendar">
+								<h6>Upcoming Tasks</h6>
+								<div data-plugin-datepicker data-plugin-skin="dark" ></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</section>
+		
+		
+
+		<!-- Vendor -->
+
+		<script src="assets/vendor/jquery/jquery.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="jquery.transit.min.js"></script>
+		<script src="es6-shim.min.js"></script>
+		<script src="easyhelper.min.js"></script>
+		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="assets/vendor/select2/select2.js"></script>
+		<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+		<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+		<script src="assets/vendor/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+
+		<script src="assets/vendor/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+		<script src="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script> 
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+		<script src="SendActivtityAction.js"></script>
+		<script src="sweet-alert.min.js"></script>
+		<script src="activity-declare.js"></script>
+		<script src="DeleteAction.js"></script>
+		<script src="EditAction.js"></script>
+		<script src="AddAction.js"></script>
+		<script src="Logout.js"></script>
+	</body>
+</html>

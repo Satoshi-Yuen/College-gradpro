@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>倒计时</title>
+    <!--以下为css样式-->
+    <style type="text/css">
+        .daojishi h2 {
+            font-family: Helvetica, Microsoft YaHei, Arial, sans-serif;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #151515;
+        }
+
+        .daojishi #timer {
+            font-family: Helvetica, Microsoft YaHei, Arial, sans-serif;
+            font-size: 14px;
+            color: #151515;
+            font-weight: bold;
+        }
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        // function daojishi(seconds, obj) {
+        //     if (seconds > 1) {
+        //         seconds--;
+        //         $(obj).val(seconds + "秒后可重新获取 ").attr("disabled", true);//禁用按钮
+        //         // 定时1秒调用一次
+        //         setTimeout(function () {
+        //             daojishi(seconds, obj);
+        //         }, 1000);
+        //     } else {
+        //         $(obj).val("免费获取验证码").attr("disabled", false);//启用按钮
+        //     }
+        // }
+        $(function(){
+            var seconds = 10
+            $(".readnote").on("click",function(){
+                timer(seconds)//执行函数
+            })
+            $(document).ready(function () {
+                $(".readnote").trigger("click")
+            })
+            $("body").last().on("click","#readnote",function(){
+                alert("申请送传送，请等待审批！")
+            })
+            function timer(seconds){
+                if(seconds > 1){
+                    seconds--
+                    $(".readnote").val("请阅读申请须知("+seconds+")").attr("disabled",true)  //禁用按钮
+                    setTimeout(function(){
+                        timer(seconds)
+                    }, 1000)
+                }
+                else{
+                    $(".readnote").val("我已阅读，马上申请").attr("disabled", false).attr("id","readnote");//启用按钮
+                    $("#readnote").removeAttr("class")
+                }
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <!-- <input type="button" id="btn" value="免费获取验证码" onclick="daojishi(60,this)" /> -->
+    <input type="button" class="readnote" value="请阅读申请须知"/>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tag start-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="edustar">
+    <meta name="author" content="khanalprem">
+    <meta name="copyright" content="khanalprem">
+
+    <!--title-->
+    <title>东莞理工学院学生社团社区 | 我的账户</title>
+
+    <!-- faveicon start   -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/layui.css"  media="all">
+    <!-- stylesheet start -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 col-xs-5">
+                        <ul class="tophead-link">
+                            <li><a href="index.html"><i > 欢迎来到学生社团社区 !</i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-7 col-sm-7 col-xs-7 tophead-right">
+                        <ul class="tophead-link">
+                            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Student community of DGUT</a>
+                            </li>
+                            <li><a href="contact.html"><i class="fa fa-credit-card" aria-hidden="true"></i> 个人账户</a>
+                            </li>
+                            <li><button class="logouttest"><i class="fa fa-key" aria-hidden="true"></i> 注销登录</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Navigation -->
+        <div id="masthead" class="site-header menu">
+            <div class="container">
+                <div class="site-branding">
+                    <div id="site-identity">
+                        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                    <!-- #site-identity -->
+                </div>
+                <!-- .site-branding -->
+                <div class="header-nav-search">
+                    <div class="header-search">
+                        <i class="fa fa-search top-search"></i>
+                        <div class="search-popup">
+                            <form class="search-wrapper" onsubmit="return false">
+                                <div>
+                                    <input type="text" autocomplete="off" placeholder="请输入社团名称" class="associationsearch">
+                                    <input type="submit" class="pop-search">
+                                </div>
+                            </form>
+                            <div class="search-overlay"></div>
+                        </div>
+                    </div>
+                    <div id="main-navigation">
+                        <nav class="main-navigation">
+                            <div class="close-icon">
+                                <i class="fa fa-close"></i>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">首页</a></li>
+                                <li><a href="activitystusignup.html">社团活动报名</a> </li>
+                                <li><a href="associationnormalsignup.html">社团会员报名</a> </li>
+                                <li><a href="associationstaffsignup.html">社团干事报名</a> </li>
+                                <li><a href="associationregister.html">社团申请</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation -->
+    </header>
+    <section class="breadcrumb" style="background-image: url(images/background/breadcrumb.jpg);">
+        <div class="breadcrumb-overlay"></div>
+        <div class="container">
+            <h1><a href="#">个人信息</a></h1>
+            <span><a href="index.html">首页</a></span><span><i class="fa fa-angle-right"></i>个人账户</span>
+        </div>
+    </section>
+
+    <section class="contact-page inner-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title inner-page-title">
+                        <h3>学生信息</h3>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fa fa-id-card"></i></p>
+                        <p><i class="fa fa-user"></i></p>
+                        <p><i class="fa fa-info"></i></p>
+                        <p><i class="fa fa-list-alt"></i></p>
+                        <p><i class="fa fa-university"></i></p>
+                        <p><i class="fa fa-phone"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="title inner-page-title">
+                        <h3>社团信息</h3>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6 ">
+                                <div class="form-group">
+                                    <label>所属社团 :</label>
+                                    <input type="text" id="asname" name="name" class="form-control" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>身份 :</label>
+                                    <input type="text" id="status" name="email" class="form-control" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="col-md -12">
+                                <div class="form-group">
+                                    <label>有效期至 :</label>
+                                    <!-- <textarea rows="6" name="message" class="form-control"></textarea> -->
+                                    <input type="text" id="time" name="email" class="form-control" readonly="readonly">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div style="margin-top: 50px;">
+                    <div class="title inner-page-title">
+                        <h3>我的社团</h3>
+                    </div>
+                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                        <legend>社团事务</legend>
+                    </fieldset>
+                    <table class="layui-table" lay-skin="line">
+                        <colgroup>
+                            <col width="70">
+                            <col width="180">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>时间</th>
+                                <th>状态</th>
+                                <th>事件</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stat Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="footer-widget">
+                        <h2>开发者</h2>
+                        <div class="widget-content">
+                            <div class="text">东莞理工学院学生社团社区仍在试用当中，若有疑问请使用邮箱联系，谢谢！</div>
+                            <address>
+                                <p><i class="fa fa-map-marker"></i> GuangDong, Dongguan</p>
+                                <p><i class="fas fa-user-tie"></i> Satoshi-Yuen</p>
+                                <p><i class="fa fa-envelope"></i> 3308606392@qq.com</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="footer-widget links-widget">
+                        <h2>校园网站</h2>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-sm-12">
+                                <ul>
+                                    <li><i class="fa fa-university"></i><a href="https://www.dgut.edu.cn/">东莞理工学院官网</a></li>
+                                    <li><i class="fa fa-book"></i><a href="http://jwc.dgut.edu.cn/">东莞理工学院教务处</a></li>
+                                    <li><i class="fa fa-building"></i><a href="http://ehall.dgut.edu.cn/">网上办事大厅</a></li>
+                                    <li><i class="fas fa-file-signature"></i><a href="http://e.dgut.edu.cn/">东莞理工学院校务服务平台</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-sm-12">
+                                <ul>
+                                    <li><i class="fa fa-graduation-cap"></i><a href="http://job.dgut.edu.cn/">东莞理工学院就业信息网</a></li>
+                                    <li><i class="fa fa-envelope"></i><a href="http://stu.dgut.edu.cn/">学工系统</a></li>
+                                    <li><i class="fas fa-swatchbook"></i><a href="http://www.lib.dgut.edu.cn/">图书馆</a></li>
+                                    <li><i class="fas fa-swatchbook"></i><a href="http://dgut.co.cnki.net/">毕业设计(论文)管理系统</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-widget subscribe-widget">
+                        <h2>Newsletter</h2>
+                        <div class="widget-content">
+                            <div class="text">Lorem ipsum dolor sit amet, adipiscing </div>
+                            <div class="newsletter-form">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" name="email" value="" placeholder="Email Address..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary button">suscribe now<span class="btn-shape"></span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer Bottom-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="text text-left">Copyright &copy; 2021.东莞理工学院 All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scroll top -->
+    <a class="scroll-top fa fa-angle-up" href="javascript:void(0)"></a>
+    <!-- srolltop end -->
+    <script src=js/jquery-3.2.1.min.js></script>
+    <!-- <script src="js/layui.js"></script> -->
+    <script src="js/layer/layer.js"></script>
+    <script src=js/bootstrap.min.js></script>
+    <script src=js/jquery.mixitup.min.js></script>
+    <script src=js/jquery.fancybox.min.js></script>
+    <script src=js/jquery.counterup.min.js></script>
+    <script src=js/waypoints.min.js></script>
+    <script src=js/jquery.magnific-popup.min.js></script>
+    <script src=js/owl.carousel.min.js></script>
+    <script src=js/script.js></script>
+    <script src="js/contact.js"></script>
+    <script src="Logout.js"></script>
+    <script src="js/searchcommmes.js"></script>
+    
+</body>
+
+</html>

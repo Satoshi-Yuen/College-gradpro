@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<!-- Google Chrome Frame也可以让IE用上Chrome的引擎: -->
+<meta name="renderer" content="webkit">
+<!--国产浏览器高速模式-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery基于Layui搜索下拉框代码 - 站长素材</title>
+
+<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/layui.css">
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- 搜索下拉框 开始 -->
+<link rel="stylesheet" type="text/css" href="css/ySearchSelect.css">
+<script src="js/jQuery.Hz2Py-szm-min.js"></script>
+<script src="js/ySearchSelect.js"></script>
+<!-- 搜索下拉框 结束 -->
+<style>
+	.layui-form {
+		margin-right: 30%;
+	}
+	
+	.layui-form-label {
+		width: 100px;
+	}
+	
+	.layui-input-block {
+		margin-left: 130px;
+	}
+</style>
+
+</head>
+<body>
+
+<div class="layui-form-item">
+	<label class="layui-form-label">带搜索的下拉框</label>
+	<div class="layui-input-inline">
+		<div class="layui-form-select ySearchSelect y1">
+			<div class="layui-input"></div>
+			<i class="layui-edge"></i>
+			<ul>
+				<li class="on" value="id0001">大白菜</li>
+				<li class="on" value="id0002">土豆</li>
+				<li class="on" value="id0003">西红柿</li>
+				<li class="on" value="id0004">黄瓜</li>
+				<li class="on" value="id0005">黄花菜</li>
+				<li class="on" value="id0005">黄花菜1</li>
+				<li class="on" value="id0005">黄花菜2</li>
+				<li class="on" value="id0006">恍惚</li>
+				<li class="on" value="id0007">恍惚是</li>
+				<li class="on" value="id0005">黄花菜3</li>
+				<li class="on" value="id0005">黄花菜4</li>
+				<li class="on" value="id0006">恍惚1</li>
+				<li class="on" value="id0007">恍惚是2</li>
+				<p>无匹配项</p>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".y1").ySearchSelect(); //调用自定义 高亮插件
+		})
+	</script>
+</div>
+<div class="layui-form-item">
+	<label class="layui-form-label">带搜索的下拉框</label>
+	<div class="layui-input-inline">
+		<div class="layui-form-select ySearchSelect y2">
+			<div class="layui-input"></div>
+			<i class="layui-edge"></i>
+			<ul>
+				<li class="on" value="id0001">大白菜</li>
+				<li class="on" value="id0002">土豆</li>
+				<li class="on" value="id0003">西红柿</li>
+				<li class="on" value="id0004">黄瓜</li>
+				<li class="on" value="id0005">黄花菜</li>
+				<li class="on" value="id0005">黄花菜1</li>
+				<li class="on" value="id0005">黄花菜2</li>
+				<li class="on" value="id0006">恍惚</li>
+				<li class="on" value="id0007">恍惚是</li>
+				<li class="on" value="id0005">黄花菜3</li>
+				<li class="on" value="id0005">黄花菜4</li>
+				<li class="on" value="id0006">恍惚1</li>
+				<li class="on" value="id0007">恍惚是2</li>
+				<p>无匹配项</p>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".y2").ySearchSelect(); //调用自定义 高亮插件
+		})
+	</script>
+</div>
+<div class="layui-form-item">
+	<label class="layui-form-label">带搜索的下拉框</label>
+	<div class="layui-input-inline">
+		<div class="layui-form-select ySearchSelect y3">
+			<div class="layui-input"></div>
+			<i class="layui-edge"></i>
+			<ul>
+				<li class="on" value="id0001">大白菜</li>
+				<li class="on" value="id0002">土豆</li>
+				<li class="on" value="id0003">西红柿</li>
+				<li class="on" value="id0004">黄瓜</li>
+				<li class="on" value="id0005">黄花菜</li>
+				<li class="on" value="id0005">黄花菜1</li>
+				<li class="on" value="id0005">黄花菜2</li>
+				<li class="on" value="id0006">恍惚</li>
+				<li class="on" value="id0007">恍惚是</li>
+				<li class="on" value="id0005">黄花菜3</li>
+				<li class="on" value="id0005">黄花菜4</li>
+				<li class="on" value="id0006">恍惚1</li>
+				<li class="on" value="id0007">恍惚是2</li>
+				<p>无匹配项</p>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$(".y3").ySearchSelect(); //调用自定义 高亮插件
+		})
+	</script>
+</div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

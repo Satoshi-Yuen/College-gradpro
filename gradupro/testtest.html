@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="securitytestbtn">点我</button> -->
+    <form action="" enctype="multipart/form-data" onsubmit="return false" id="upfile" method="post" >
+        <input type="file" name="upload" id="fileupload">
+        <button type="submit" id="subbtn">提交</button>
+    </form>
+    <script src="jquery.min.js"></script>
+    <script>
+        document.getElementById("subbtn").onclick = function(){
+            var file = document.querySelector("#fileupload").files[0]
+            //console.log(file)
+            var formdata = new FormData(document.getElementById("upfile"))
+            formdata.append("fileupload",file)
+            //console.log(formdata)
+            //console.log("formdata是否为空："+$.isEmptyObject(formdata))
+            //console.log(formdata.get("fileupload"))
+            $.ajax({
+                url: 'http://localhost:5500/graduationproject/association_manager/activitydeclaration/filetest',
+                type: 'post',
+                data: formdata,
+                contentType: false,
+                processData: false,
+                success: function(data){
+                    if(data == true){
+                        alert("上传成功！")
+                    }
+                }
+            }) 
+        }
+        // document.getElementById("securitytestbtn").onclick = function(){
+
+        //     $.ajax({
+        //         url: 'http://localhost:5500/graduationproject/index',
+        //         type: "post",
+        //         data: {id: 1},
+        //         dataType: 'json',
+        //         success: function(data){
+        //             console.log(data)
+        //             if((data.msg == "Need Authorities!") && (data.status == "000" || data.status == "300")){
+        //                 window.location.href='pages-signin.html'
+        //             }
+        //         }
+        //     })
+        // }
+
+    </script>  
+</body>
+</html>

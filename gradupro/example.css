@@ -1,0 +1,83 @@
+button, .button {
+  background-color: #AEDEF4;
+  color: white;
+  border: none;
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 500;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 15px 35px;
+  margin: 26px 5px 0 5px;
+  cursor: pointer; }
+  button:focus, .button:focus {
+    outline: none; }
+  button:hover, .button:hover {
+    background-color: #a1d9f2; }
+  button:active, .button:active {
+    background-color: #81ccee; }
+  button.cancel, .button.cancel {
+    background-color: #D0D0D0; }
+    button.cancel:hover, .button.cancel:hover {
+      background-color: #c8c8c8; }
+    button.cancel:active, .button.cancel:active {
+      background-color: #b6b6b6; }
+  button.download, .button.download {
+    position: fixed;
+    right: 30px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #ABCADA;
+    font-weight: 500;
+    text-transform: uppercase;
+    z-index: 3; }
+    @media all and (max-width: 1278px) {
+      button.download, .button.download {
+        display: none; } }
+
+ul.examples {
+  list-style-type: none;
+  width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 0; }
+  @media all and (max-width: 758px) {
+    ul.examples {
+      width: auto; } }
+  ul.examples li {
+    padding-left: 0; }
+  ul.examples .ui, ul.examples pre {
+    display: inline-block;
+    vertical-align: top; }
+    @media all and (max-width: 758px) {
+      ul.examples .ui, ul.examples pre {
+        display: block;
+        max-width: none;
+        margin: 0 auto; } }
+  ul.examples .ui {
+    width: 300px;
+    text-align: center; }
+    ul.examples .ui button {
+      margin-top: 12px; }
+    ul.examples .ui p {
+      text-align: center;
+      margin-bottom: 0; }
+  ul.examples pre {
+    max-width: 370px;
+    margin-top: 67px; }
+    @media all and (max-width: 758px) {
+      ul.examples pre {
+        margin-top: 16px !important;
+        margin-bottom: 60px; } }
+  ul.examples .warning pre {
+    margin-top: 93px; }
+
+ol {
+  max-width: 700px;
+  margin: 70px auto;
+  list-style-position: inside;
+  padding-left: 0; }
+  ol li {
+    color: #A7ADB2; }
+    ol li p {
+      margin-bottom: 10px; }

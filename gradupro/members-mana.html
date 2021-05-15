@@ -1,0 +1,630 @@
+<!doctype html>
+<html class="fixed">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title></title>
+		<link rel="Shortcut Icon" href="assets/images/favicon.ico">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="pageskill.css">
+		<link rel="stylesheet" href="example.css">
+		<link rel="stylesheet" href="sweet-alert.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>
+
+	</head>
+	<body>
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="#" class="logo">
+						<img src="assets/images/logo.png" height="50" alt="Porto Admin" />
+					</a>
+					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+			
+					<form action="pages-search-results.html" class="search nav-form">
+						<div class="input-group input-search">
+							<input type="text" class="form-control" name="q" id="q" autocomplete="off" placeholder="学校门户跳转">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+			
+					<span class="separator"></span>
+			
+					<ul class="notifications">
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-tasks"></i>
+								<span class="badge">3</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu large">
+								<div class="notification-title">
+									<span class="pull-right label label-default">3</span>
+									Tasks
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<p class="clearfix mb-xs">
+												<span class="message pull-left">Generating Sales Report</span>
+												<span class="message pull-right text-dark">60%</span>
+											</p>
+											<div class="progress progress-xs light">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+											</div>
+										</li>
+			
+										<li>
+											<p class="clearfix mb-xs">
+												<span class="message pull-left">Importing Contacts</span>
+												<span class="message pull-right text-dark">98%</span>
+											</p>
+											<div class="progress progress-xs light">
+												<div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+											</div>
+										</li>
+			
+										<li>
+											<p class="clearfix mb-xs">
+												<span class="message pull-left">Uploading something big</span>
+												<span class="message pull-right text-dark">33%</span>
+											</p>
+											<div class="progress progress-xs light mb-xs">
+												<div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-envelope"></i>
+								<span class="badge">4</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="pull-right label label-default">230</span>
+									Messages
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Doe Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Doe</span>
+												<span class="message">Lorem ipsum dolor sit.</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Junior</span>
+												<span class="message truncate">Truncated message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet lacinia orci. Proin vestibulum eget risus non luctus. Nunc cursus lacinia lacinia. Nulla molestie malesuada est ac tincidunt. Quisque eget convallis diam, nec venenatis risus. Vestibulum blandit faucibus est et malesuada. Sed interdum cursus dui nec venenatis. Pellentesque non nisi lobortis, rutrum eros ut, convallis nisi. Sed tellus turpis, dignissim sit amet tristique quis, pretium id est. Sed aliquam diam diam, sit amet faucibus tellus ultricies eu. Aliquam lacinia nibh a metus bibendum, eu commodo eros commodo. Sed commodo molestie elit, a molestie lacus porttitor id. Donec facilisis varius sapien, ac fringilla velit porttitor et. Nam tincidunt gravida dui, sed pharetra odio pharetra nec. Duis consectetur venenatis pharetra. Vestibulum egestas nisi quis elementum elementum.</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joe Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joe Junior</span>
+												<span class="message">Lorem ipsum dolor sit.</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Junior</span>
+												<span class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet lacinia orci. Proin vestibulum eget risus non luctus. Nunc cursus lacinia lacinia. Nulla molestie malesuada est ac tincidunt. Quisque eget convallis diam.</span>
+											</a>
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<span class="badge">3</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="pull-right label label-default">3</span>
+									Alerts
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-thumbs-down bg-danger"></i>
+												</div>
+												<span class="title">Server is Down!</span>
+												<span class="message">Just now</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-lock bg-warning"></i>
+												</div>
+												<span class="title">User Locked</span>
+												<span class="message">15 minutes ago</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-signal bg-success"></i>
+												</div>
+												<span class="title">Connection Restaured</span>
+												<span class="message">10/10/2014</span>
+											</a>
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+			
+					<span class="separator"></span>
+			
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name"></span>
+								<span class="role">administrator</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> 我的信息</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> 锁定账号</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href class="logouttest"><i class="fa fa-power-off"></i> 注销登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+					<div class="sidebar-header">
+						<div class="sidebar-title">
+							学生社团管理系统
+						</div>
+						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+						</div>
+					</div>
+
+					<div class="nano">
+						<div class="nano-content">
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-main">
+									<li>
+										<a href="index.html">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>首页</span>
+										</a>
+									</li>
+									<li class="nav-parent" id="shetuan">
+										<a>
+											<i class="fa fa-copy" aria-hidden="true"></i>
+											<span>社团信息</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="IntroductionofAssociation.html">&#8195;●&#8195;社团概述</a>
+											</li>
+											<li>
+												<a href="files-download.html">&#8195;●&#8195;文件下载</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent" id="huodong">
+										<a>
+											<i class="fa fa-tasks" aria-hidden="true"></i>
+											<span>活动管理</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="activity-declare.html">&#8195;●&#8195;活动申报</a>
+											</li>
+                                            <li>
+												<a href="activity-release.html">&#8195;●&#8195;活动发布</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent" id="baoming">
+										<a>
+											<i class="fa fa-list-alt" aria-hidden="true"></i>
+											<span>报名管理</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="community-signup.html">&#8195;●&#8195;社团报名</a>
+											</li>
+											<li>
+												<a href="activity-signup.html">&#8195;●&#8195;活动报名</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent nav-expanded nav-active">
+										<a>
+											<i class="fa fa-table" aria-hidden="true"></i>
+											<span>会员管理</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="members-mana.html">&#8195;●&#8195;普通会员</a>
+											</li>
+											<li>
+												<a href="staffs-mana.html">&#8195;●&#8195;社团骨干</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</aside>
+				<!-- end: sidebar -->
+
+				<section role="main" class="content-body">
+					<header class="page-header">
+						<h2>会员管理</h2>
+					
+						<div class="right-wrapper pull-right">
+							<ol class="breadcrumbs">
+								<li>
+									<a href="index.html">
+										<i class="fa fa-home"></i>
+									</a>
+								</li>
+								<li><span>首页</span></li>
+							</ol>
+					
+							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
+						</div>
+					</header>
+
+					<!-- start: page -->
+						<section class="panel">
+							<header class="panel-heading">
+								<div class="panel-actions">
+									<a href="#" class="fa fa-caret-down"></a>
+								</div>
+						
+								<h2 class="panel-title">普通会员总表</h2>
+							</header>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="mb-md">
+											<button id="addMemTable" class="btn btn-primary">增加会员 <i class="fa fa-plus"></i></button>
+										</div>
+									</div>
+								</div>
+								<table class="content">
+									<thead>
+										<tr>
+											<th>序号</th>
+											<th>学号</th>
+											<th>姓名</th>
+											<th>性别</th>
+											<th>年级</th>
+											<th>学院</th>
+											<th>专业班级</th>
+											<th>联系方式</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>
+								<div class="page" id="page-4"></div>
+							</div>
+						</section>
+
+						<section class="panel" id="membersadd">
+							<header class="panel-heading">
+								<div class="panel-actions">
+									<a href="#" class="fa fa-caret-down"></a>
+								</div>
+				
+								<h2 class="panel-title">会员新增信息填写</h2>
+							</header>
+							<div class="panel-body">
+								<form class="form-horizontal form-bordered" id="membersadddata" onsubmit="return false" method="get" action="">
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">学号</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="addmemno" name="stunum">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">姓名</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="memaddname" name="stuname">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputSuccess">性别</label>
+										<div class="col-md-6">
+											<span class="radio">
+												<label>
+													<input type="radio" name="stusex" value="男" checked="">
+													男
+												</label>&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;
+												<label>
+													<input type="radio" name="stusex" value="女">
+													女
+												</label>
+											</span>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">年级</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="memaddgrade" name="stugrade">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">学院</label>
+										<div class="col-md-6">
+											<select data-plugin-selectTwo class="form-control populate placeholder" data-plugin-options='{ "placeholder": "选择一个学院", "allowClear": true }' name="stucollege">
+												<!-- <optgroup label="Alaskan/Hawaiian Time Zone">
+													<option value="AK">Alaska</option>
+													<option value="HI">Hawaii</option>
+												</optgroup>
+												<optgroup label="Pacific Time Zone">
+													<option value="CA">California</option>
+													<option value="NV">Nevada</option>
+													<option value="OR">Oregon</option>
+													<option value="WA">Washington</option>
+												</optgroup>
+												<optgroup label="Mountain Time Zone">
+													<option value="AZ">Arizona</option>
+													<option value="CO">Colorado</option>
+													<option value="ID">Idaho</option>
+													<option value="MT">Montana</option>
+													<option value="NE">Nebraska</option>
+													<option value="NM">New Mexico</option>
+													<option value="ND">North Dakota</option>
+													<option value="UT">Utah</option>
+													<option value="WY">Wyoming</option>
+												</optgroup>
+												<optgroup label="Central Time Zone">
+													<option value="AL">Alabama</option>
+													<option value="AR">Arkansas</option>
+													<option value="IL">Illinois</option>
+													<option value="IA">Iowa</option>
+													<option value="KS">Kansas</option>
+													<option value="KY">Kentucky</option>
+													<option value="LA">Louisiana</option>
+													<option value="MN">Minnesota</option>
+													<option value="MS">Mississippi</option>
+													<option value="MO">Missouri</option>
+													<option value="OK">Oklahoma</option>
+													<option value="SD">South Dakota</option>
+													<option value="TX">Texas</option>
+													<option value="TN">Tennessee</option>
+													<option value="WI">Wisconsin</option>
+												</optgroup>
+												<optgroup label="Eastern Time Zone">
+													<option value="CT">Connecticut</option>
+													<option value="DE">Delaware</option>
+													<option value="FL">Florida</option>
+													<option value="GA">Georgia</option>
+													<option value="IN">Indiana</option>
+													<option value="ME">Maine</option>
+													<option value="MD">Maryland</option>
+													<option value="MA">Massachusetts</option>
+													<option value="MI">Michigan</option>
+													<option value="NH">New Hampshire</option>
+													<option value="NJ">New Jersey</option>
+													<option value="NY">New York</option>
+													<option value="NC">North Carolina</option>
+													<option value="OH">Ohio</option>
+													<option value="PA">Pennsylvania</option>
+													<option value="RI">Rhode Island</option>
+													<option value="SC">South Carolina</option>
+													<option value="VT">Vermont</option>
+													<option value="VA">Virginia</option>
+													<option value="WV">West Virginia</option>
+												</optgroup> -->
+												<option value="马克思主义学院">马克思主义学院</option>
+												<option value="机械工程学院">机械工程学院</option>
+												<option value="电子工程与智能化学院">电子工程与智能化学院</option>
+												<option value="计算机科学与技术学院">计算机科学与技术学院</option>
+												<option value="生态环境与建筑工程学院">生态环境与建筑工程学院</option>
+												<option value="经济与管理学院">经济与管理学院</option>
+												<option value="社会发展研究院">社会发展研究院</option>
+												<option value="文学与传媒学院">文学与传媒学院</option>
+												<option value="法律与社会工作学院（知识产权学院）">法律与社会工作学院（知识产权学院）</option>
+												<option value="科技创新研究院">科技创新研究院</option>
+												<option value="教育学院（师范学院）">教育学院（师范学院）</option>
+												<option value="化学工程与能源技术学院">化学工程与能源技术学院</option>
+												<option value="AK">粤台产业科技学院</option>
+												<option value="粤台产业科技学院">粤港机器人学院</option>
+												<option value="智汇谷现代网商学院">智汇谷现代网商学院</option>
+												<option value="国际学院">国际学院</option>
+												<option value="中法联合学院（东莞理工学院法国国立工艺学院联合学院）">中法联合学院（东莞理工学院法国国立工艺学院联合学院）</option>
+												<option value="学生社区知行学院">学生社区知行学院</option>
+												<option value="西门子智能制造学院">西门子智能制造学院</option>
+												<option value="网络空间安全学院">网络空间安全学院</option>
+												<option value="材料料学与工程学院">材料料学与工程学院</option>
+												<option value="知行学院（杨振宁创新班）">知行学院（杨振宁创新班）</option>
+												<option value="继续教育学院">继续教育学院</option>
+												<option value="创新创业学院">创新创业学院</option>
+												<option value="华为信息与网络技术学院">华为信息与网络技术学院</option>
+												<option value="先进制造学院（长安）">先进制造学院（长安）</option>
+												<option value="网络空间安全产业学院">网络空间安全产业学院</option>
+												<option value="研究生处">研究生处</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">专业班级</label>
+										<div class="col-md-6">
+											<input type="text" autocomplete="off" class="form-control" id="memaddclass" name="stuprofessclass">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="inputDefault">联系方式</label>
+										<div class="col-md-6">
+											<input type="tel" autocomplete="off" class="form-control" id="memaddtele" name="stutele">
+										</div>
+										<label for="email" class="error" hidden>请输入正确的电话号码</label>
+									</div>
+									<input autocomplete="off" name="associationname" id="memaddassociation" type="hidden">
+									<div class="form-group">
+										<button class="btn btn-primary btn-submit" id="memaddsubmit">提交 </button>
+										<button type="reset" class="btn btn-default btn-default-last">重置</button>
+									</div>
+								</form>
+							</div>
+						</section>
+					<!-- end: page -->
+				</section>
+			</div>
+
+			<aside id="sidebar-right" class="sidebar-right">
+				<div class="nano">
+					<div class="nano-content">
+						<a href="#" class="mobile-close visible-xs">
+							Collapse <i class="fa fa-chevron-right"></i>
+						</a>
+			
+						<div class="sidebar-right-wrapper">
+			
+							<div class="sidebar-widget widget-calendar">
+								<h6>Upcoming Tasks</h6>
+								<div data-plugin-datepicker data-plugin-skin="dark" ></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</section>
+        
+		<!-- Vendor -->
+		<script src="assets/vendor/jquery/jquery.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="jquery.transit.min.js"></script>
+		<script src="es6-shim.min.js"></script>
+		<script src="easyhelper.min.js"></script>
+		<script src="memberspaging.js"></script>
+		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="assets/vendor/select2/select2.js"></script>
+		<!-- <script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+		<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script> -->
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+
+        <!-- 跳转测试 -->
+		<script src="sweet-alert.min.js"></script>
+		<script src="DeleteAction.js"></script>
+        <script src="AddAction.js"></script>
+		<script src="Logout.js"></script>
+	</body>
+</html>
